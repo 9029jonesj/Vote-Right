@@ -61,9 +61,14 @@ body {
   color: #024654;
 }
 
-h3 {
+.rep, h3 {
   font-size: 2em;
   color: #f7686e;
+}
+
+.dem, h3 {
+  font-size: 2em;
+  color: #6f71f6;
 }
 
 .site-title {
@@ -74,7 +79,24 @@ h3 {
   font-size: 1.125em;
   font-style: italic;
 }
+/*
+.columns .item:hover .social .fa, .columns .item:focus .social .fa .rep{
+  color: #FF6067;
+  padding: 0 0.3125em;
+}
+.columns .item:hover .social .fa:hover, .columns .item:focus .social .fa:hover .rep{
+  color: #769ab2;
+}
 
+.columns .item:hover .social .fa, .columns .item:focus .social .fa .dem{
+  color: #8789f7;
+  padding: 0 0.3125em;
+}
+.columns .item:hover .social .fa:hover, .columns .item:focus .social .fa:hover .dem{
+  color: #769ab2;
+}
+
+*/
 .main-nav {
   background: #737373;
   color: white;
@@ -205,6 +227,18 @@ h3 {
   position: relative;
   overflow: hidden;
 }
+
+.columns .demitem {
+  padding: 1.5625em;
+  max-width: 47%;
+  background: #ffffff;
+  color: #1A577F;
+  border-bottom: 5px solid #000000;
+  margin-bottom: 2.1875em;
+  position: relative;
+  overflow: hidden;
+}
+
 .columns .item .item-title {
   color: #011d23;
   font-size: 24px;
@@ -214,7 +248,12 @@ h3 {
 .columns .item .item-image {
   max-width: 100%;
 }
-.columns .item:hover, .columns .item:focus {
+.columns .demitem:hover, .columns .demitem:focus {
+  background: #e8f4fa;
+  border-bottom-color: #8789f7;
+}
+
+.columns .repitem:hover, .columns .repitem:focus {
   background: #e8f4fa;
   border-bottom-color: #FF6067;
 }
@@ -225,8 +264,12 @@ h3 {
   z-index: 5;
   padding: 10px 0;
 }
-.columns .item:hover .social .fa, .columns .item:focus .social .fa {
-  color: #FF6067;
+.columns .demitem:hover .social .fa, .columns .demitem:focus .social .fa {
+  color: #8789f7;
+  padding: 0 0.3125em;
+}
+.columns .repitem:hover .social .fa, .columns .repitem:focus .social .fa {
+  color: #FF9067;
   padding: 0 0.3125em;
 }
 .columns .item:hover .social .fa:hover, .columns .item:focus .social .fa:hover {
