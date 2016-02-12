@@ -63,12 +63,12 @@ body {
 
 .rep, h3 {
   font-size: 2em;
-  color: #f7686e;
+  color: #ff0000;
 }
 
 .dem, h3 {
   font-size: 2em;
-  color: #6f71f6;
+  color: #0040ff;
 }
 
 .site-title {
@@ -79,24 +79,7 @@ body {
   font-size: 1.125em;
   font-style: italic;
 }
-/*
-.columns .item:hover .social .fa, .columns .item:focus .social .fa .rep{
-  color: #FF6067;
-  padding: 0 0.3125em;
-}
-.columns .item:hover .social .fa:hover, .columns .item:focus .social .fa:hover .rep{
-  color: #769ab2;
-}
 
-.columns .item:hover .social .fa, .columns .item:focus .social .fa .dem{
-  color: #8789f7;
-  padding: 0 0.3125em;
-}
-.columns .item:hover .social .fa:hover, .columns .item:focus .social .fa:hover .dem{
-  color: #769ab2;
-}
-
-*/
 .main-nav {
   background: #737373;
   color: white;
@@ -228,7 +211,7 @@ body {
   overflow: hidden;
 }
 
-.columns .demitem {
+.columns .demitem, .columns .repitem {
   padding: 1.5625em;
   max-width: 47%;
   background: #ffffff;
@@ -249,13 +232,13 @@ body {
   max-width: 100%;
 }
 .columns .demitem:hover, .columns .demitem:focus {
-  background: #e8f4fa;
-  border-bottom-color: #8789f7;
+  background: #c0e1f1;
+  border-bottom-color: #0040ff;
 }
 
 .columns .repitem:hover, .columns .repitem:focus {
-  background: #e8f4fa;
-  border-bottom-color: #FF6067;
+  background: #ffcccf;
+  border-bottom-color: #ff0000;
 }
 .columns .item:hover .social, .columns .item:focus .social {
   position: absolute;
@@ -265,11 +248,11 @@ body {
   padding: 10px 0;
 }
 .columns .demitem:hover .social .fa, .columns .demitem:focus .social .fa {
-  color: #8789f7;
+  color: #0040ff;
   padding: 0 0.3125em;
 }
 .columns .repitem:hover .social .fa, .columns .repitem:focus .social .fa {
-  color: #FF9067;
+  color: #ff0000;
   padding: 0 0.3125em;
 }
 .columns .item:hover .social .fa:hover, .columns .item:focus .social .fa:hover {
