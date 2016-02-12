@@ -174,14 +174,16 @@ body {
     min-height: 175px;
   }
 }
-.cool-photo {
+.main-photo {
   background-image: url(http://newshour-tc.pbs.org/newshour/wp-content/uploads/2015/10/RTX1TJC3-1024x683.jpg);
 }
 
-.cool-photo2 {
-  background-image: url(http://lorempixel.com/1300/400/food);
+.rep-photo {
+  background-image: url(http://s3-origin-images.politico.com/2015/08/07/150807_gop_debate_gty_1160.jpg);
 }
-
+.dem-photo {
+  background-image: url(http://i2.cdn.turner.com/cnnnext/dam/assets/151013211036-democratic-debate-group-shot-exlarge-169.jpeg);
+}
 .post {
   padding: 1.875em;
 }
