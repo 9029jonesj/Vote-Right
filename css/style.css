@@ -60,6 +60,14 @@ body {
   }
 }
 
+.profile-img {
+  width: 25%;
+}
+
+.camp-img {
+  width: 50%;
+}
+
 .site-title, h1, h2, h3 {
   font-family: "Righteous", sans-serif;
   font-size: 2.625em;
