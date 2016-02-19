@@ -197,6 +197,13 @@ body {
 .dem-photo {
   background-image: url(http://i2.cdn.turner.com/cnnnext/dam/assets/151013211036-democratic-debate-group-shot-exlarge-169.jpeg);
 }
+.clinton-photo {
+  background-image: url(https://s3.graphiq.com/sites/default/files/980/media/images/Hillary_Clinton_6905639.jpg);
+}
+
+.bernie-photo {
+  background-image: url(https://s.graphiq.com/sites/default/files/980/media/images/Bernie_Sanders_6905685.jpg);
+}
 .post {
   padding: 1.875em;
 }
@@ -313,4 +320,98 @@ body {
   color: #419cd8;
   text-decoration: none;
   border-bottom: 1px solid;
+}
+
+/********************************/
+
+.wrapper {
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+.tabs > li {
+  transition-duration: .25s;
+  display: table-cell;
+  list-style: none;
+  text-align: center;
+  padding: 20px 20px 25px 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: black;
+}
+.tabs > li:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 120%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition-duration: .25s;
+  border-radius: 5px 5px 0 0;
+}
+.tabs > li:hover:before {
+  -webkit-transform: translateY(70%);
+  transform: translateY(70%);
+}
+.tabs > li.active {
+  color: white;
+}
+.tabs.d > li.active:before {
+  transition-duration: .5s;
+  background-color: #0040ff;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.tabs.r > li.active:before {
+  transition-duration: .5s;
+  background-color: #ff0000;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.tab__content {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+}
+.tab__content > li {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  list-style: none;
+}
+.tab__content > li .content__wrapper {
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  padding: 45px 40px 40px 40px;
+  background-color: white;
+}
+
+.content__wrapper h2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.content__wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
