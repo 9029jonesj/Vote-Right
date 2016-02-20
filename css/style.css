@@ -3,23 +3,19 @@ body {
   font-family: "Nunito", sans-serif;
   color: #222;
 }
-
 * {
   -webkit-transition: all .65s ease;
   transition: all .65s ease;
   box-sizing: border-box;
 }
-
 .container {
   max-width: 75em;
   margin: 0 auto;
 }
-
 .header .container a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
-
 .header {
   background: #666666;
   color: white;
@@ -33,19 +29,19 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .header .site-title, .header .site-tagline {
   font-weight: 400;
@@ -59,45 +55,36 @@ body {
     margin: 0;
   }
 }
-
 .profile-img {
   width: 25%;
 }
-
 .camp-img {
   width: 50%;
 }
-
 .site-title, h1, h2, h3 {
   font-family: "Righteous", sans-serif;
   font-size: 2.625em;
   color: #024654;
 }
-
 .rep, h3 {
   font-size: 2em;
   color: #ff0000;
 }
-
 .dem, h3 {
   font-size: 2em;
   color: #0040ff;
 }
-
-.third, h3{
+.third, h3 {
   font-size: 2em;
   color: #2d862d;
 }
-
 .site-title {
   color: white;
 }
-
 .site-tagline {
   font-size: 1.125em;
   font-style: italic;
 }
-
 .main-nav {
   background: #737373;
   color: white;
@@ -118,17 +105,17 @@ body {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
 }
 .main-nav ul a {
@@ -150,12 +137,12 @@ body {
 @media (max-width: 700px) {
   .main-nav ul {
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   .main-nav ul a {
     position: absolute;
@@ -178,7 +165,6 @@ body {
     width: 100%;
   }
 }
-
 .full-bleed {
   background-size: cover;
   min-height: 300px;
@@ -186,7 +172,6 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 700px) {
   .full-bleed {
     min-height: 175px;
@@ -195,7 +180,6 @@ body {
 .post {
   padding: 1.875em;
 }
-
 .columns {
   display: -webkit-box;
   display: -webkit-flex;
@@ -204,11 +188,11 @@ body {
   width: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .columns .item {
   padding: 1.5625em;
@@ -220,7 +204,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .columns .demitem, .columns .thirditem, .columns .repitem {
   padding: 1.5625em;
   max-width: 47%;
@@ -231,7 +214,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .columns .item .item-title {
   color: #011d23;
   font-size: 24px;
@@ -246,12 +228,10 @@ body {
   background: #c0e1f1;
   border-bottom-color: #0040ff;
 }
-
 .columns .thirditem:hover, .columns .thirditem:focus {
   background: #b3e6b3;
   border-bottom-color: #2d862d;
 }
-
 .columns .repitem:hover, .columns .repitem:focus {
   background: #ffcccf;
   border-bottom-color: #ff0000;
@@ -271,7 +251,6 @@ body {
   color: #ff0000;
   padding: 0 0.3125em;
 }
-
 .columns .thirditem:hover .social .fa, .columns .thirditem:focus .social .fa {
   color: #2d862d;
   padding: 0 0.3125em;
@@ -299,7 +278,6 @@ body {
     width: 100%;
   }
 }
-
 .columns .social {
   position: absolute;
   bottom: -60px;
@@ -307,7 +285,6 @@ body {
   z-index: -1;
   font-size: 1.75em;
 }
-
 .footer {
   background: #666666;
   color: white;
@@ -327,7 +304,6 @@ body {
   min-width: 100%;
   margin: 0 auto;
 }
-
 .tabs {
   display: table;
   table-layout: fixed;
@@ -373,21 +349,18 @@ body {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-
 .tabs.r > li.active:before {
   transition-duration: .5s;
   background-color: #ff0000;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-
 .tabs.t > li.active:before {
   transition-duration: .5s;
   background-color: #2d862d;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-
 .tab__content {
   background-color: white;
   position: relative;
@@ -409,7 +382,6 @@ body {
   padding: 45px 40px 40px 40px;
   background-color: white;
 }
-
 .content__wrapper h2 {
   width: 100%;
   text-align: center;
