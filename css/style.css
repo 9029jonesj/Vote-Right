@@ -84,6 +84,11 @@ body {
   color: #0040ff;
 }
 
+.third, h3{
+  font-size: 2em;
+  color: #2d862d;
+}
+
 .site-title {
   color: white;
 }
@@ -187,23 +192,6 @@ body {
     min-height: 175px;
   }
 }
-.main-photo {
-  background-image: url(http://newshour-tc.pbs.org/newshour/wp-content/uploads/2015/10/RTX1TJC3-1024x683.jpg);
-}
-
-.rep-photo {
-  background-image: url(http://s3-origin-images.politico.com/2015/08/07/150807_gop_debate_gty_1160.jpg);
-}
-.dem-photo {
-  background-image: url(http://i2.cdn.turner.com/cnnnext/dam/assets/151013211036-democratic-debate-group-shot-exlarge-169.jpeg);
-}
-.clinton-photo {
-  background-image: url(https://s3.graphiq.com/sites/default/files/980/media/images/Hillary_Clinton_6905639.jpg);
-}
-
-.bernie-photo {
-  background-image: url(https://s.graphiq.com/sites/default/files/980/media/images/Bernie_Sanders_6905685.jpg);
-}
 .post {
   padding: 1.875em;
 }
@@ -233,7 +221,7 @@ body {
   overflow: hidden;
 }
 
-.columns .demitem, .columns .repitem {
+.columns .demitem, .columns .thirditem, .columns .repitem {
   padding: 1.5625em;
   max-width: 47%;
   background: #ffffff;
@@ -252,10 +240,16 @@ body {
 }
 .columns .item .item-image {
   max-width: 100%;
+  max-height: 50%;
 }
 .columns .demitem:hover, .columns .demitem:focus {
   background: #c0e1f1;
   border-bottom-color: #0040ff;
+}
+
+.columns .thirditem:hover, .columns .thirditem:focus {
+  background: #b3e6b3;
+  border-bottom-color: #2d862d;
 }
 
 .columns .repitem:hover, .columns .repitem:focus {
@@ -275,6 +269,11 @@ body {
 }
 .columns .repitem:hover .social .fa, .columns .repitem:focus .social .fa {
   color: #ff0000;
+  padding: 0 0.3125em;
+}
+
+.columns .thirditem:hover .social .fa, .columns .thirditem:focus .social .fa {
+  color: #2d862d;
   padding: 0 0.3125em;
 }
 .columns .item:hover .social .fa:hover, .columns .item:focus .social .fa:hover {
@@ -378,6 +377,13 @@ body {
 .tabs.r > li.active:before {
   transition-duration: .5s;
   background-color: #ff0000;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.tabs.t > li.active:before {
+  transition-duration: .5s;
+  background-color: #2d862d;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
