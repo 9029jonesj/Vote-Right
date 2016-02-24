@@ -267,6 +267,7 @@ body {
 .columns.thirds .item {
   max-width: 31%;
 }
+
 @media (max-width: 770px) {
   .columns.thirds .item {
     max-width: 48%;
@@ -393,3 +394,4 @@ body {
   height: auto;
   border-radius: 5px;
 }
+/****************************************************************/
