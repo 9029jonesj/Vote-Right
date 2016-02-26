@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app="VoteRight">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vote Right - Your Vote Counts</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700|Righteous' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#0040ff">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+
+<body ng-controller="LoadRSS">
+  <header class="header">
+    <div class="container">
+      <h1 class="site-title"><a href="http://www.VoteRight.co">Vote Right</a></h1>
+      <span class="site-tagline">Your vote counts!</span>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <div class="container">
+      <ul>
+        <li class="mobile-button"><a href="#">Menu</a></li>
+        <li><a href="http://www.VoteRight.co/Candidates/">Candidates</a></li>
+        <li><a href="http://www.VoteRight.co/Resources/">Resources</a></li>
+        <li><a href="http://www.VoteRight.co/Contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid" style="background:#ffffff">
+    <div class="row-fluid">
+      <div class="col-md-8">
+
+        <div>
+          <h1>Bernie Sanders</h1>
+          <img src="../../assets/Democratic/Sanders/profile.jpg" class="profile-img img-rounded">
+          <p align="left" class="profile"><b>Main Website:</b> <a href="https://berniesanders.com/" target="_blank" style="color: #0040ff">berniesanders.com</a></p>
+          <p align="left" class="profile"><b>Political Office Website:</b> <a href="http://www.sanders.senate.gov/" target="_blank" style="color: #0040ff">sanders.senate.gov</a></p>
+          <p align="left" class="profile"><b>Facebook Page:</b> <a href="https://www.facebook.com/senatorsanders" target="_blank" style="color: #0040ff">senatorsanders</a></p>
+          <p align="left" class="profile"><b>Main Issues:</b></p>
+          <ul align="left" class="bullets">
+            <li>Income and Wealth Inequality</li>
+            <li>Student Loans</li>
+            <li>Racial Justice</li>
+          </ul>
+          <p align="left" class="profile"><i>Bernie Sanders first rose to elective office in 1981 and holds an elected position to this day.
+          Sanders has served as an elected official for a total of 34 years and counting, which is 19 more than the average 2016 presidential candidate.</i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div>
+            <img src="../../assets/Democratic/Sanders/logo.png" align="right" class="camp-img" style="padding-top: 10%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <div class="full-bleed" style="background-image: url(../../assets/Democratic/Sanders/banner.jpg);"></div>
+  <!-- <hr> -->
+    <!-- Newsfeed and Info Tabs -->
+  <section class="wrapper">
+    <ul class="tabs d">
+      <li class="active">Issues</li>
+      <li>Newsfeed</li>
+    </ul>
+
+    <ul class="tab__content d">
+      <li class="active">
+        <div class="content__wrapper">
+          <p>
+            Information
+          </p>
+        </div>
+      </li>
+      <li>
+        <!-- Newsfeed -->
+<section class="content">
+  <article class="post">
+    <div class="container">
+      <div class="columns thirds" ng-repeat="feed in feeds">
+        <div class="item demitem" ng-repeat="item in feed.entries">
+          <h4><a href="{{item.link}}" target="_blank">{{item.title}}</a> </h4>
+          	(<span>{{item.publishedDate}}</span>)
+          		<p class="text-left">{{item.contentSnippet}}</p>    <br />
+        </div>
+      </div>
+    </div>
+    </article>
+    </section>
+<!-- END Newsfeed -->
+      </li>
+    </ul>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Made by <a href="http://JayJones.io">JayJonesDevelopment.</a></p>
+    </div>
+  </footer>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../../js/index.js"></script>
+  <script src="../../js/berniesanders.js"></script>
+  <script src="../../js/candidate.js"></script>
+
+
+
+</body>
+
+</html>
